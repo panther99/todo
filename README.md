@@ -1,6 +1,11 @@
 # todo
 Easy 'to do' list in PHP.
 
+# Requirements
+
+- Apache web server and PHP5 or higher
+- phpmyadmin or similar software to execute SQL (or just add everything manually)
+
 # How to install
 
 - Download repository by clicking 'Download ZIP' on the right side of this page or clone using Git
