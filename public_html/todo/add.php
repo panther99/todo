@@ -6,7 +6,7 @@ require_once 'app/init.php';
 
 if(isset($_POST['name'])) {
 	$name = trim($_POST['name']);
-
+	$name = escape($name);
 
 	if(!empty($name)) {
 		$addedQuery = $db->prepare("
