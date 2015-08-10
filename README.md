@@ -19,8 +19,8 @@ Easy 'to do' list in PHP.
 
 In `init.php` change this variables:
 
-`$dbUsername` to your MySQL username.
-`$dbPassword` to your MySQL password.
+- `$dbUsername` to your MySQL username.
+- `$dbPassword` to your MySQL password.
 
 ## Parsedown
 
