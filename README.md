@@ -1,5 +1,5 @@
 # todo
-Easy 'to do' list in PHP.
+Easy 'to do' list in PHP. It is a fork of Codecourse's example: https://www.youtube.com/watch?v=wt3txKJCh-4
 
 # Requirements
 
