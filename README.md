@@ -15,6 +15,13 @@ Easy 'to do' list in PHP.
 
 # Instructions for init.php
 
+## Edit connection data
+
+In `init.php` change this variables:
+
+`$dbUsername` to your MySQL username.
+`$dbPassword` to your MySQL password.
+
 ## Parsedown
 
 *For more details about Parsedown, visit https://github.com/erusev/parsedown/wiki*
