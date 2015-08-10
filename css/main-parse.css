@@ -71,6 +71,7 @@ a {
 	border: 0px;
 	opacity: 0.4;
 	float: right;
+	margin-top: -30px;
 }
 
 .delete-button {
@@ -82,6 +83,7 @@ a {
 	border: 0px;
 	opacity: 0.6;
 	float: right;
+	margin-top: -60px;
 }
 
 .undone-button {
@@ -102,3 +104,4 @@ a {
 	margin-top: 10px;
 	box-shadow: 3px 3px 0 #ddd;
 }
+

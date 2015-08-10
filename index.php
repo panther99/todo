@@ -1,18 +1,18 @@
 <?php
 
-require_once 'app/init.php';
+	require_once 'app/init.php';
 
-$itemsQuery = $db->prepare("
-	SELECT id, name, done
-	FROM items
-	WHERE user = :user
-");
+	$itemsQuery = $db->prepare("
+		SELECT id, name, done
+		FROM items
+		WHERE user = :user
+	");
 
-$itemsQuery->execute([
-	'user' => $_SESSION['user_id']
-]);
+	$itemsQuery->execute([
+		'user' => $_SESSION['user_id']
+	]);
 
-$items = $itemsQuery->rowCount() ? $itemsQuery : [];
+	$items = $itemsQuery->rowCount() ? $itemsQuery : [];
 
 ?>
 
@@ -26,7 +26,7 @@ $items = $itemsQuery->rowCount() ? $itemsQuery : [];
 		<link href="http://fonts.googleapis.com/css?family=Shadows+Into+Light+Two" rel="stylesheet">
 		<link href="http://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-		<link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="<?php testParsing(); ?>">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	</head>
 
@@ -39,7 +39,7 @@ $items = $itemsQuery->rowCount() ? $itemsQuery : [];
 			<ul class="items">
 				<?php foreach($items as $item): ?>
 				<li>
-					<span class="item<?php echo $item['done'] ? ' done' : ''?>"> <?php echo $item['name']; ?></span>
+					<span class="item<?php echo $item['done'] ? ' done' : ''?>"> <?php echo parse($item['name']); ?></span>
 					<a class="delete-button" href="mark.php?as=delete&item=<?php echo $item['id']; ?>">Delete</a>
 					<?php if(!$item['done']): ?> 
 						<a class="done-button" href="mark.php?as=done&item=<?php echo $item['id']; ?>">Mark as done</a>
@@ -54,7 +54,7 @@ $items = $itemsQuery->rowCount() ? $itemsQuery : [];
 			<?php endif; ?>
 
 			<form class="item-add" action="add.php" method="POST">
-				<input type="text" name="name" placeholder="Type a new item here." class="input" autocomplete="off" required>
+				<input type="text" name="name" placeholder="Type a new item here." class="input" autocomplete="off" maxlength="30" required>
 				<input type="submit" value="Add" class="submit">
 			</form>
 

@@ -12,3 +12,17 @@ Easy 'to do' list in PHP.
 - Create database called 'todo'
 - Edit informations in /app/init.php for connecting database
 - In phpmyadmin, go to your database, click 'SQL' from top menu and add SQL from /app/todo.sql
+
+# Instructions for init.php
+
+## Parsedown
+
+* For more details about PArsedown, visit https://github.com/erusev/parsedown/wiki *
+
+If you want to enable [Parsedown](https://parsedown.org "Parsedown Homepage") formating on todo, just change `$parsingEnabled` variable in `init.php` to ** true **.
+
+** Warning: ** When Parsedown is enabled, `main-parse.css` stylesheet is used instead of `main.css`.
+
+## escape()
+
+* escape() * function is added to prevent [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting "Cross-site scripting attack (redirects to Wikipedia)").
