@@ -15,14 +15,21 @@ Easy 'to do' list in PHP.
 
 # Instructions for init.php
 
+## Edit connection data
+
+In `init.php` change this variables:
+
+- `$dbUsername` to your MySQL username.
+- `$dbPassword` to your MySQL password.
+
 ## Parsedown
 
-* For more details about PArsedown, visit https://github.com/erusev/parsedown/wiki *
+*For more details about Parsedown, visit https://github.com/erusev/parsedown/wiki*
 
-If you want to enable [Parsedown](https://parsedown.org "Parsedown Homepage") formating on todo, just change `$parsingEnabled` variable in `init.php` to ** true **.
+If you want to enable [Parsedown](https://parsedown.org "Parsedown Homepage") formating on todo, just change `$parsingEnabled` variable in `init.php` to **true**.
 
-** Warning: ** When Parsedown is enabled, `main-parse.css` stylesheet is used instead of `main.css`.
+**Warning:** When Parsedown is enabled, `main-parse.css` stylesheet is used instead of `main.css`.
 
 ## escape()
 
-* escape() * function is added to prevent [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting "Cross-site scripting attack (redirects to Wikipedia)").
+*escape()* function is added to prevent [XSS](https://en.wikipedia.org/wiki/Cross-site_scripting "Cross-site scripting attack (redirects to Wikipedia)").
