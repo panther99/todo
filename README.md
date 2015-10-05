@@ -9,9 +9,9 @@ Easy 'to do' list in PHP. It is a fork of Codecourse's example: https://www.yout
 # How to install
 
 - Download repository by clicking 'Download ZIP' on the right side of this page or clone using Git
-- Create database called 'todo'
-- Edit informations in /app/init.php for connecting database
-- In phpmyadmin, go to your database, click 'SQL' from top menu and add SQL from /app/todo.sql
+- Create new database and define it's name at *Global functions* part in `app/init.php`
+- Edit informations in `app/init.php` for connecting database
+- In phpmyadmin, go to your database, click 'SQL' from top menu and add SQL from `/app/todo.sql`
 
 # Instructions for init.php
 
