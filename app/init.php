@@ -38,6 +38,7 @@
 		} else {
 			echo 'css/main.css';
 		}
+		
 	}
 
 	function parse($string) {

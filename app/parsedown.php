@@ -8,8 +8,8 @@
 # (c) Emanuil Rusev
 # http://erusev.com
 #
-# For the full license information, view the LICENSE file at
-# https://github.com/erusev/parsedown/blob/master/LICENSE.txt
+# For the full license information, view the LICENSE file that was distributed
+# with this source code.
 #
 #
 
@@ -17,7 +17,7 @@ class Parsedown
 {
     # ~
 
-    const version = '1.5.4';
+    const version = '1.6.0';
 
     # ~
 
@@ -1476,7 +1476,7 @@ class Parsedown
             return self::$instances[$name];
         }
 
-        $instance = new self();
+        $instance = new static();
 
         self::$instances[$name] = $instance;
 
