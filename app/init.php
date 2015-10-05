@@ -4,6 +4,8 @@
 	require 'parsedown.php';
 
 	# Global settings
+	$dbHost = 'localhost';
+	$dbName = 'database-name';
 	$dbUsername = 'username';
 	$dbPassword = 'password';
 
@@ -13,7 +15,7 @@
 
 	$_SESSION['user_id'] = 1;
 
-	$db = new PDO('mysql:host=localhost;dbname=todo', $dbUsername, $dbPassword);
+	$db = new PDO('mysql:host=' . $dbHost . ';dbname=' . $dbName . '', $dbUsername, $dbPassword);
     $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     $db->setAttribute(PDO::ATTR_EMULATE_PREPARES, false);
 
@@ -38,7 +40,7 @@
 		} else {
 			echo 'css/main.css';
 		}
-		
+
 	}
 
 	function parse($string) {
