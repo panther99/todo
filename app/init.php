@@ -4,7 +4,7 @@
 	require 'parsedown.php';
 
 	# Global settings
-	$dbHost = 'localhost';
+	$dbHost = 'host-name';
 	$dbName = 'database-name';
 	$dbUsername = 'username';
 	$dbPassword = 'password';
