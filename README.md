@@ -1,3 +1,5 @@
+⚠️ **Attention**: This repository is outdated and uses bad practices (like keeping variables inside PHP files instead of using environment variables). If you're going to use it just be aware of that and don't **ever** use it in the production.
+
 # todo
 Easy 'to do' list in PHP. It is a fork of Codecourse's example: https://www.youtube.com/watch?v=wt3txKJCh-4
 
